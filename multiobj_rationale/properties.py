@@ -7,7 +7,7 @@ from rdkit.Chem import AllChem
 from rdkit import DataStructs
 import rdkit.Chem.QED as QED
 import multiobj_rationale.scripts.sascorer as sascorer
-import os
+import os, sys
 import pickle
 
 from chemprop.train import predict
@@ -22,7 +22,7 @@ class gsk3_model():
     """Scores based on an ECFP classifier for activity."""
 
     kwargs = ["clf_path"]
-    clf_path = 'data/gsk3/gsk3.pkl'
+    clf_path = os.path.join(os.path.dirname(__file__), 'data/gsk3/gsk3.pkl')
 
     def __init__(self):
         with open(self.clf_path, "rb") as f:
@@ -54,7 +54,7 @@ class jnk3_model():
     """Scores based on an ECFP classifier for activity."""
 
     kwargs = ["clf_path"]
-    clf_path = 'data/jnk3/jnk3.pkl'
+    clf_path = os.path.join(os.path.dirname(__file__), 'data/jnk3/jnk3.pkl')
 
     def __init__(self):
         with open(self.clf_path, "rb") as f:
