@@ -1,9 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='multiobj-rationale',
     version='https://github.com/wengong-jin/multiobj-rationale',
-    packages=['scripts', 'fuseprop'],
+    packages=find_packages(),
     url='',
     license='MIT',
     author='Wengong Jin',

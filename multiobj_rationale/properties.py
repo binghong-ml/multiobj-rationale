@@ -6,7 +6,7 @@ from rdkit import rdBase
 from rdkit.Chem import AllChem
 from rdkit import DataStructs
 import rdkit.Chem.QED as QED
-import scripts.sascorer as sascorer
+import multiobj_rationale.scripts.sascorer as sascorer
 import os
 import pickle
 

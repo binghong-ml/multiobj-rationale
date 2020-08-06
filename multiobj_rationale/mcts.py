@@ -4,8 +4,8 @@ import math
 from rdkit import Chem
 from functools import partial
 from multiprocessing import Pool
-from fuseprop import find_clusters, extract_subgraph
-from properties import get_scoring_function
+from multiobj_rationale.fuseprop import find_clusters, extract_subgraph
+from multiobj_rationale.properties import get_scoring_function
 
 MIN_ATOMS = 15
 C_PUCT = 10

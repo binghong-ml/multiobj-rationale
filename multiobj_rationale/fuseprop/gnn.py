@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import rdkit.Chem as Chem
 import torch.nn.functional as F
-from fuseprop.mol_graph import MolGraph
-from fuseprop.encoder import GraphEncoder
-from fuseprop.decoder import GraphDecoder
-from fuseprop.nnutils import *
+from multiobj_rationale.fuseprop.mol_graph import MolGraph
+from multiobj_rationale.fuseprop.encoder import GraphEncoder
+from multiobj_rationale.fuseprop.decoder import GraphDecoder
+from multiobj_rationale.fuseprop.nnutils import *
 
 def make_cuda(graph_tensors):
     make_tensor = lambda x: x if type(x) is torch.Tensor else torch.tensor(x)

@@ -4,8 +4,8 @@ import pickle
 
 from rdkit import Chem
 from torch.utils.data import Dataset
-from fuseprop.chemutils import random_subgraph, extract_subgraph, enum_root
-from fuseprop.mol_graph import MolGraph
+from multiobj_rationale.fuseprop.chemutils import random_subgraph, extract_subgraph, enum_root
+from multiobj_rationale.fuseprop.mol_graph import MolGraph
 
 class MoleculeDataset(Dataset):
 

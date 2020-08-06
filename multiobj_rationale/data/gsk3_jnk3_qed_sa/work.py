@@ -1,5 +1,5 @@
 from rdkit import Chem
-import sascorer as sascorer
+import multiobj_rationale.scripts.sascorer as sascorer
 from rdkit.Chem import Descriptors
 import rdkit.Chem.QED as QED
 import sys

@@ -4,7 +4,7 @@ from argparse import ArgumentParser
 from rdkit import Chem, DataStructs
 from rdkit.Chem import AllChem
 from rdkit.Chem import Descriptors
-import sascorer as sascorer
+import multiobj_rationale.scripts.sascorer as sascorer
 import rdkit.Chem.QED as QED
 
 parser = ArgumentParser()

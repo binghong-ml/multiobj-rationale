@@ -2,8 +2,8 @@ import torch
 import rdkit.Chem as Chem
 import networkx as nx
 
-from fuseprop.mol_graph import MolGraph
-from fuseprop.chemutils import *
+from multiobj_rationale.fuseprop.mol_graph import MolGraph
+from multiobj_rationale.fuseprop.chemutils import *
 from collections import defaultdict
 
 class IncBase(object):

@@ -1,6 +1,6 @@
 import sys
 from rdkit import Chem
-from fuseprop import enum_subgraph, extract_subgraph 
+from multiobj_rationale.fuseprop import enum_subgraph, extract_subgraph
 
 ratio_list = [0.3, 0.4, 0.5, 0.6, 0.7]
 

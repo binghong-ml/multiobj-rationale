@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import rdkit.Chem as Chem
 import torch.nn.functional as F
-from fuseprop.nnutils import *
-from fuseprop.encoder import GraphEncoder
-from fuseprop.mol_graph import MolGraph
-from fuseprop.inc_graph import IncGraph
+from multiobj_rationale.fuseprop.nnutils import *
+from multiobj_rationale.fuseprop.encoder import GraphEncoder
+from multiobj_rationale.fuseprop.mol_graph import MolGraph
+from multiobj_rationale.fuseprop.inc_graph import IncGraph
 from collections import deque
 
 class HTuple():

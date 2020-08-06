@@ -2,7 +2,7 @@ import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 import rdkit
 import argparse
-from fuseprop import merge_rationales, unique_rationales
+from multiobj_rationale.fuseprop import merge_rationales, unique_rationales
 from multiprocessing import Pool
 
 def join_func(tup):

@@ -8,7 +8,7 @@ import rdkit
 from collections import deque
 from multiprocessing import Pool
 from rdkit import Chem
-from fuseprop import MolGraph, common_atom_vocab, random_subgraph, dual_random_subgraph
+from multiobj_rationale.fuseprop import MolGraph, common_atom_vocab, random_subgraph, dual_random_subgraph
 
 def to_numpy(tensors):
     convert = lambda x : x.numpy() if type(x) is torch.Tensor else x

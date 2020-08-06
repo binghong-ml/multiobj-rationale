@@ -8,7 +8,7 @@ import math, random, sys
 import numpy as np
 import argparse
 
-from fuseprop import *
+from multiobj_rationale.fuseprop import *
 import rdkit
 
 lg = rdkit.RDLogger.logger() 

@@ -3,9 +3,9 @@ import random
 import rdkit
 import rdkit.Chem as Chem
 import networkx as nx
-from fuseprop.chemutils import *
-from fuseprop.nnutils import *
-from fuseprop.vocab import common_atom_vocab
+from multiobj_rationale.fuseprop.chemutils import *
+from multiobj_rationale.fuseprop.nnutils import *
+from multiobj_rationale.fuseprop.vocab import common_atom_vocab
 from collections import deque
 
 add = lambda x,y : x + y if type(x) is int else (x[0] + y, x[1] + y)

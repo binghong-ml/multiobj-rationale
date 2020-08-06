@@ -10,8 +10,8 @@ import math, random, sys, os
 import numpy as np
 from tqdm import tqdm
 
-from fuseprop import *
-from properties import get_scoring_function
+from multiobj_rationale.fuseprop import *
+from multiobj_rationale.properties import get_scoring_function
 
 qed_sa_func = lambda x: x[0] >= 0.5 and x[1] >= 0.5 and x[2] >= 0.6 and x[3] <= 4.0
 normal_func = lambda x: min(x) >= 0.5

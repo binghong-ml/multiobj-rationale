@@ -8,7 +8,7 @@ import argparse
 import rdkit
 from tqdm import tqdm
 
-from fuseprop import *
+from multiobj_rationale.fuseprop import *
 
 lg = rdkit.RDLogger.logger() 
 lg.setLevel(rdkit.RDLogger.CRITICAL)
